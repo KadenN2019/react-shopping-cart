@@ -1,2 +1,86 @@
 html {box-sizing:border-box;}
 *, *::before, *::after {box-sizing:inherit;}
+
+.container{
+    width: 1300px;
+    display: flex;
+    margin: auto;
+    font-family: Helvetica, sans-serif;
+}
+.main{
+    width: 1000px;
+}
+/* Main Page */
+.cont2{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin-bottom: 10px;
+}
+.middle{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+/* Product */
+.cont3{
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+}
+.product{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .product:hover{
+    border: .5px solid black;
+    z-index: 10;
+} */
+.productPic{
+    width: 250px;
+}
+.price{
+    display: flex;
+    align-items: baseline;
+    font-size: 20px;
+}
+.dollarSign{
+    font-size: 13px;
+}
+.addCart{
+    font-size: 15px;
+    width: 90%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+.addCart:hover{
+    background: rgb(231, 183, 2);
+}
+
+
+
+
+/* Sizes */
+.sizesButton{
+    font-size: 13px;
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    margin: 2px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.sizesButton:hover{
+    border: 1px solid black;
+}
