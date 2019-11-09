@@ -4,6 +4,7 @@ export default function (props) {
     return (
         <div>
             <div>
+            <div className="titleSize">Sizes:</div>
             <button className="sizesButton">
                 XS
             </button>

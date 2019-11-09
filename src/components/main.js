@@ -24,10 +24,10 @@ export default function (props) {
 					{getData.map(data => {
 						return(
 							<div>
-								<div>
-									Free Shipping
-								</div>
 								<div className='product'>
+									<div className={data.isFreeShipping === true ? 'show' : 'hide'}>
+											Free Shipping
+									</div>
 									<div>
 										<img className='productPic' src={`./assets/${data.sku}_1.jpg`}/>
 									</div>
