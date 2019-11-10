@@ -2,7 +2,7 @@ html {box-sizing:border-box;}
 *, *::before, *::after {box-sizing:inherit;}
 
 .container{
-    width: 1300px;
+    width: 1400px;
     display: flex;
     margin: auto;
     font-family: Helvetica, sans-serif;
@@ -57,12 +57,12 @@ select{
 .titleSize{
     font-size: 20px;
 }
-/* .product:hover{
+.product:hover{
     border: .5px solid #aaa;
     z-index: 10;
-} */
+}
 .productPic{
-    width: 250px;
+    width: 248px;
 }
 .price{
     display: flex;

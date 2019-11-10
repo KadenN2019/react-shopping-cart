@@ -1,8 +1,12 @@
 import React from 'react'
-import { useData } from '../redux/ducks/main'
+import { useCart } from '../redux/ducks/carts'
 
 export default function (props) {
-  const {fetch, getData} = useData()
+  const {add, data} = useCart()
+  
+  function handleClick(datas){
+	  add(datas)
+  }
 
   return (
     <div className="cont2">
@@ -21,7 +25,7 @@ export default function (props) {
         	</div>
         </div>
         <div className="cont3">
-					{getData.map(data => {
+					{data.map(data => {
 						return(
 							<div>
 								<div className='product'>
@@ -39,13 +43,13 @@ export default function (props) {
 											{data.currencyFormat}
 										</div>
 										<div className="amount">
-											{data.price}
+											{data.price.toFixed(2)}
 										</div>
 									</div>
 									{/* <div>
 											or {data.installments}
 									</div> */}
-									<button className="addCart">
+									<button onClick={(e) => handleClick(data)} className="addCart">
 										Add to cart
 									</button>
 								</div>
