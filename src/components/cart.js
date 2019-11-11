@@ -10,15 +10,16 @@ export default function Cart (props) {
     }
 
     var prices = cart.map(data =>(
-        data.item.prices
+        data.item.price
         ))
 
-    function sum(num1,num2){
+    function sum(num1, num2){
         return num1 + num2
     }
 
     var total = prices.reduce(sum,0)
-console.log(cart)
+
+console.log(total)
     return (
         <div>
             <div id="slidecart" >
